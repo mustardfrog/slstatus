@@ -65,15 +65,14 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 
-	{ datetime, " {%s}",                       "%a %d %m %Y %T" },
-	{ battery_perc, "[  %s%%",          "BAT0" },
-	{ battery_state, "(%s)] ",          "BAT0" },
-	{ cpu_perc, "[CPU %s%% ",              NULL},
-	{ cpu_freq, "%sHz] ",              NULL},
-	{ ram_perc, "[RAM %s%% "   ,           NULL},
-	{ swap_used, "SWAP %s%%] ",              NULL},
-	{ disk_perc, "[DISK %s%%] ",          "/" },
-    { wifi_essid, "[%s ",               "wlp2s0"},
-    { wifi_perc, "%s] ",               "wlp2s0"},
+	{ datetime, " %s",                     "%a %d %m %Y %T" },
+	//{ battery_perc, "[  %s%%",          "BAT0" },
+	//{ battery_state, "(%s)] ",          "BAT0" },
+	{ cpu_perc, " |CPU %s%% ",               NULL},
+	//{ cpu_freq, "%sHz] ",              NULL},
+	{ ram_perc, "RAM %s%% "   ,              NULL},
+	{ swap_used, "SWAP %s|",              NULL},
+    { disk_used, "Used %s",                   "/" },
+    { keymap, "| %s",                   NULL },
 	//{ vol_perc, "VOL %s%% "   ,           "/usr/bin/pactl"},
 };
