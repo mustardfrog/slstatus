@@ -1,7 +1,7 @@
 
 slstatus - suckless status
 ------------
-The simplest status manager for dwm.
+The simplest status viewer for dwm.
 
 <br>
 
